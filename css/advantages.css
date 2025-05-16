@@ -1,0 +1,48 @@
+.section-advantages {
+    position: relative; 
+    display: flex;
+    min-height: 624px;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px; 
+}
+
+.header-advantages {
+    width: 582px;
+    height: 120px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards-advanages {
+    display: flex;
+    width: 1296px;
+    height: 223px;
+    margin: 0px auto;
+    gap: 20px;
+    justify-content: center;
+
+    
+}
+
+.card-adv{
+    border: 1px solid gray;
+    width: 250px;
+    padding: 20px;
+}
+
+.image-element{
+    width: 50px;
+    height: 50px;
+}
+
+
+.header-advantages p {
+    margin-bottom: 5px; 
+}
+
+.header-advantages h2 {
+    margin-top: 5px; 
+}

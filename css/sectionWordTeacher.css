@@ -1,0 +1,125 @@
+.section-word-teacher {
+    position: relative; 
+    display: flex;
+    min-height: 500px; 
+    background-color: rgb(237, 236, 236);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.header-line-container-teacher {
+    width: 5vh;
+    height: 1px;
+    background-color: gray; 
+    margin: 5px 0;
+}
+
+.header-word-teacher h2 {
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+.header-line-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 12px;
+}
+
+.header-word-container-teacher {
+    color: gray;
+}
+
+.content-word-teacher {
+    position: relative;
+    display: flex;
+    left: 50%;
+    top: 50px;
+    flex-direction: column;
+    width: 600px; 
+    height: 400px;
+    box-sizing: border-box; 
+}
+
+.description-text {
+    width: 440px;
+    margin-top: 10px; 
+    font-size: 14px; 
+    line-height: 1.5; 
+    font-weight: 300;
+}
+
+.name-word-teacher{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.name-teacher{
+    font-size: 14px;  
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.signa-image{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    width: 235px;
+    height: 170px;
+    bottom: 10px;
+    background-color: rgb(231, 231, 231);
+}
+
+.qoute-first{
+    display: flex;
+    position: absolute;
+    color: gray;
+    font-weight: 200;
+    font-size: 100px;
+    left: -100px;
+    bottom: 0;
+    margin: 0
+}
+
+.qoute-second{
+    display: flex;
+    position: absolute;
+    color: gray;
+    font-weight: 200;
+    font-size: 100px;
+    right: 100px;
+    top: 20px;
+    margin: 0
+}
+
+.image-teacher{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 515px;
+    height: 100%;
+}
+
+.image-back{
+    position: absolute;
+    height: 100%;
+    width:376px;
+    background-color: #E3C37A ;
+    z-index: 2;
+}
+
+.image-people{
+    position: absolute;
+    left: 150px;
+    top: 40px;
+    width:330px;
+    height: 460px;
+    z-index: 3;
+}

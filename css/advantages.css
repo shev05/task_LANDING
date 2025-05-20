@@ -1,10 +1,10 @@
 .section-advantages {
     position: relative; 
     display: flex;
-    min-height: 624px;
+    min-height: 500px;
     flex-direction: column;
     align-items: center; 
-    padding-top: 50px; 
+    padding-top: 58px; 
 }
 
 .header-advantages {
@@ -45,4 +45,24 @@
 
 .header-advantages h2 {
     margin-top: 5px; 
+}
+
+.button-advantages{
+    display: flex;
+    width: 180px;
+    height: 44px;
+    border: 1px solid #E3C37A;
+    background-color: white;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 58px; 
+}
+
+.button-advantages:hover{
+    border-color: #c0a05c;
+    color: #333; 
+    cursor: pointer;
 }

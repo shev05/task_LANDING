@@ -1,0 +1,77 @@
+.section-specialists {
+    position: relative; 
+    display: flex;
+    min-height: 500px;
+    flex-direction: column;
+    background-color: rgb(237, 236, 236);
+    align-items: center; 
+    overflow: hidden;
+    flex-direction: row;
+
+}
+
+.block-specialists{
+    flex-shrink: 0; 
+    flex-grow: 0;
+    margin-left: 150px;
+    width: 410px;
+    height: 322px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+
+.text-specialist{
+    max-width: 410px;  
+    width: 100%;      
+    font-size: medium;
+    font-weight: 300;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    margin-top: 5px;
+}
+
+.button-specialists{
+    display: flex;
+    width: 180px;
+    height: 44px;
+    border: 1px solid #E3C37A;
+    background-color: rgb(237, 236, 236);
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.specialists-core{
+    display: flex;
+    margin-left: 64px;
+    width: 1225px;
+    height: 383px;
+    position: relative; 
+    display: flex;
+}
+
+.block-people{
+    width: 229px;
+    height: 382px;
+    padding-right: 20px;
+    align-items: center;
+    
+}
+
+.block-photo{
+    width: 229px;
+    height: 312px;
+    background-color: #A4834E;
+    overflow: hidden; 
+}
+
+.block-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}

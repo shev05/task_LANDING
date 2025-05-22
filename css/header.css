@@ -44,7 +44,6 @@
 .main-header-logo {
     font-size: 24px;
     flex: 0 0 auto;
-
 }
 
 .main-header-phone {
@@ -159,6 +158,7 @@
     display: flex;
     gap: 10px;
     width: 100%;
+    z-index: 3;
 }
 
 .phone-input {
@@ -283,4 +283,54 @@
     font-weight: 100;
     margin: 0;
     word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+    .main-header{
+        height: 400px;
+    }
+    .main-header nav{
+        display: none;
+    }
+    .header-line {
+        margin: 0px 0;
+    }
+    .main-header-logo {
+        margin: 0;
+    }
+    .header-top {
+        padding: 0;
+    }
+    .head {
+        gap: 5px; 
+        top: 16%;
+        width: 100%; 
+        left: 1%;
+    }
+    .head h1 {
+        font-size: 20px;
+    }
+    .head p {
+        font-size: 15px;
+
+    }
+    .statue-container{
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        width: 100%;
+        z-index: 2;
+    }
+    .list1-image, .list2-image, .list3-image{
+        display: none;
+    }
+    .consultation-container{
+        z-index: 3;
+        top: 35%;
+    }
+    .stats-container{
+        z-index: 3;
+        width: 100%;
+        left: 0;
+    }
 }

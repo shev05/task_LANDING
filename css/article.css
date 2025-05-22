@@ -74,3 +74,60 @@
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width: 480px) {
+    .article-section {
+        height: auto;
+        padding: 40px 15px;
+        overflow-x: hidden;
+    }
+    
+    .article-header {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        align-items: center;
+    }
+    
+    .text-article-header {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .header-word-container-teacher {
+        font-size: 14px !important;
+    }
+    
+    .article-header h2 {
+        font-size: 28px !important;
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+    
+    .button-header-article {
+        margin-top: 15px;
+        width: 160px;
+    }
+    
+    .article-blocks {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    
+    .article-block {
+        flex: 0 0 auto; 
+        width: 80% !important;
+        height: auto;
+        margin-right: 15px !important;
+    }
+
+}

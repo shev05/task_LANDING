@@ -23,8 +23,6 @@
     margin: 0px auto;
     gap: 20px;
     justify-content: center;
-
-    
 }
 
 .card-adv{
@@ -65,4 +63,30 @@
     border-color: #c0a05c;
     color: #333; 
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .section-advantages {
+        padding-top: 30px;
+    }
+    .header-advantages {
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
+    .cards-advanages {
+        width: 92%;
+        padding: 15px;
+        height: auto;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .card-adv {
+        flex: 0 0 auto; 
+    }
+
+    .button-advantages{
+        margin-bottom: 30px;
+    }
 }

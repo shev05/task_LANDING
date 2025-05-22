@@ -103,3 +103,100 @@
     border: 1px solid #E3C37A;
     padding: 0;
 }
+
+@media (max-width: 480px) {
+    .section-contacts {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .map-contacts {
+        width: 100%;
+        height: 300px;
+        order: 2;
+    }
+    
+    .map-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .pointer-image {
+        left: 9%;
+        top: 35%;
+    }
+    
+    .info-contacts {
+        height: auto;
+        width: 92.5%;
+        padding: 40px 15px;
+        order: 1;
+    }
+    
+    .info-contacts-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .info-block-contacts {
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+    
+    .header-info-contacts {
+        height: auto;
+        gap: 15px;
+    }
+    
+    .header-info-contacts h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    
+    .main-info-contacts {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .main-info-contacts-up {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .block-form-info-contacts {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .form-info-contacts {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .input-info-contacts {
+        width: 91% !important;
+        height: 60px;
+        padding: 0 15px;
+    }
+    
+    .button-form-info-contacts {
+        width: 100% !important;
+        height: 44px;
+    }
+    
+    .header-word-container-teacher,
+    .main-info-contacts p,
+    .block-form-info-contacts p {
+        font-size: 12px !important;
+    }
+    
+    .main-info-contacts span {
+        font-size: 14px !important;
+    }
+}

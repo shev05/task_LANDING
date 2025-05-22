@@ -1,7 +1,7 @@
 .section-word-teacher {
     position: relative; 
     display: flex;
-    min-height: 500px; 
+    height: 500px; 
     background-color: rgb(237, 236, 236);
 }
 
@@ -75,6 +75,7 @@ h2 {
     height: 170px;
     bottom: 10px;
     background-color: rgb(231, 231, 231);
+    z-index: 1;
 }
 
 .qoute-first{
@@ -122,4 +123,45 @@ h2 {
     width:330px;
     height: 460px;
     z-index: 3;
+}
+
+@media (max-width: 480px) {
+    .section-word-teacher{
+        height: 300px;
+
+    }
+
+    .image-back{
+        display: none;
+    }
+
+    .qoute-first, .qoute-second{
+        display: none;
+    }
+    .image-teacher{
+        z-index: 1;
+    }
+
+    .content-word-teacher{
+        left: 0;
+        top: 0; 
+        z-index: 2;
+        box-sizing: border-box;
+        height: 300px;
+        padding: 5px;
+        width: 100%;
+    }
+    .image-people{
+        display: none;
+    }
+    .signa-image{
+        width: 30%;
+        height: 30%;
+        right: 2%;
+        bottom: 2%;
+    }
+
+    .name-word-teacher{
+        padding: 5px;
+    }
 }

@@ -85,7 +85,7 @@
 .main-header nav a.active::after {
     content: '';
     position: absolute;
-    bottom: -33px;
+    bottom: -31.5px;
     z-index: 1;
     left: 0;
     width: 100%;

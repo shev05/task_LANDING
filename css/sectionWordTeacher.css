@@ -13,7 +13,7 @@ h2 {
 .header-line-container-teacher {
     width: 5vh;
     height: 1px;
-    background-color: gray; 
+    background-color: #B1B1B1; 
     margin: 5px 0;
 }
 
@@ -30,7 +30,7 @@ h2 {
 }
 
 .header-word-container-teacher {
-    color: gray;
+    color: #B1B1B1;
 }
 
 .content-word-teacher {
@@ -80,7 +80,7 @@ h2 {
 .qoute-first{
     display: flex;
     position: absolute;
-    color: gray;
+    color: #B1B1B1;
     font-weight: 200;
     font-size: 100px;
     left: -100px;
@@ -91,7 +91,7 @@ h2 {
 .qoute-second{
     display: flex;
     position: absolute;
-    color: gray;
+    color: #B1B1B1;
     font-weight: 200;
     font-size: 100px;
     right: 100px;

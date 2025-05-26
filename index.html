@@ -52,7 +52,7 @@
     <div class="consultation">
         <p class="consultation__title">НУЖНА КОНСУЛЬТАЦИЯ?</p>
         <form class="consultation__form">
-            <input type="tel" class="consultation__input" placeholder="+7(___) ___ __ __">
+            <input type="tel" id="phoneInput" class="consultation__input" placeholder="+7(___) ___ __ __">
             <button class="consultation__button" onclick="openModal('components/image/Pinguins.jpg')">Заказать звонок</button>
         </form>
     </div>
@@ -342,15 +342,15 @@
                         </div>
                         <div class="info__main">
                             <div class="info__main__up">
-                                <p class="title__text">ТЕЛЕФОН    <span class="golden__text">+7 (999) 890 09 98</span></p> 
-                                <p class="title__text">ПОЧТА    <span class="golden__text">INFO@YA.RU</span></p>               
+                                <p class="title__text">ТЕЛЕФОН    <a class="golden__text" href="tel:+7 999 890 09 98">+7 (999) 890 09 98</a></p> 
+                                <p class="title__text">ПОЧТА    <a href="email:INFO@YA.RU" class="golden__text">INFO@YA.RU</a></p>               
                             </div>
                             <p class="title__text">АДРЕС    <span class="golden__text">МОСКВА, УЛ. АРБАТ, Д.1</span></p>               
                         </div>
                         <div class="info__footer">
                             <p>НУЖНА КОНСУЛЬТАЦИЯ?</p>
                             <form class="info__form">
-                                <input placeholder="+7 (__) ___ __ __" class="info__input"/>
+                                <input type="tel" id="contactsPhone" placeholder="+7 (__) ___ __ __" class="info__input"/>
                                 <button class="info__button"  onclick="openModal('components/image/Pinguins.jpg')">ЗАКАЗАТЬ ЗВОНОК</button>
                             </form>
                         </div>
@@ -374,5 +374,8 @@
     <script src="javaScript/clickNav.js"></script>
     <script src="javaScript/modal.js"></script>
     <script src="javaScript/report.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/jquery.inputmask.min.js"></script>
+    <script src="javaScript/phoneInput.js"></script>
 </body>
 </html>

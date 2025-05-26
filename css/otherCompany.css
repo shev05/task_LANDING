@@ -1,4 +1,4 @@
-.other-company-select{
+.clients{
     position: relative; 
     display: flex;
     height: 481px;
@@ -8,14 +8,14 @@
     flex-direction: column;
     z-index: 2;
 }
-.back-photo-select{
+.clients__bg{
     position: absolute; 
     height: 100%;
     width: 100%;
     background-color: #232228;
     z-index: 1;
 }
-.other-company-block{
+.clients__grid{
     display: flex;
     flex-direction: row;
     position: relative;
@@ -25,7 +25,7 @@
     justify-content: space-between
 }
 
-.company-block{
+.client__card{
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     border: 1px solid #B1B1B1;
 }
 
-.picture-company{
+.client__logo{
     color: #B1B1B1;
     height: 140px;
     width: 140px;
@@ -48,24 +48,40 @@
         saturate(1);
 }
 
+.clients__text{
+    z-index: 2; color: gray; font-size: 18px; margin: 70px 0 16px 0;
+}
+
+.clients .title_text{
+    font-size: 45px;
+    z-index: 2;
+    margin: 16px 0;
+    color: white;
+}
+
+.client__card__text{
+    color: white;
+}
+
+
 @media (max-width: 480px) {
-    .other-company-select {
+    .clients {
         height: auto;
         padding: 40px 15px;
     }
     
-    .other-company-select p {
+    .clients p {
         margin: 30px 0 10px 0 !important;
         font-size: 14px !important;
     }
     
-    .other-company-select h2 {
+    .clients h2 {
         font-size: 28px !important;
         margin: 10px 0 20px 0 !important;
         text-align: center;
     }
     
-    .other-company-block {
+    .clients__grid {
         width: 100%;
         height: auto;
         margin-top: 20px;
@@ -77,19 +93,19 @@
         scroll-snap-type: x mandatory;
     }
     
-    .company-block {
+    .clients__card {
         flex: 0 0 150px;
         height: 150px;
         margin-right: 15px;
         scroll-snap-align: start;
     }
     
-    .picture-company {
+    .client__logo {
         width: 100px;
         height: 100px;
     }
     
-    .company-block p {
+    .clients__card p {
         font-size: 12px;
         margin-top: 5px !important;
     }

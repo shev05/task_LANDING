@@ -1,22 +1,22 @@
-.section-contacts{
+.contacts{
     position: relative; 
     display: flex;
     height: 488px;
     z-index: 2;
 }
 
-.map-contacts{
+.contacts__map{
     position: relative; 
     display: flex;
     width: 642;
 }
 
-.map-image{
+.map__image{
     width: 642;
     height: 488px;
 }
 
-.pointer-image{
+.pointer__image{
     position: absolute;
     width: 48px;
     height: 48px;
@@ -24,7 +24,7 @@
     top: 200px;
 }
 
-.info-contacts{
+.contacts__info{
     position: relative; 
     display: flex;
     height: 488px;
@@ -33,7 +33,7 @@
     justify-content: center;
 }
 
-.info-block-contacts{
+.info{
     position: relative; 
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     height: 319px;
 }
 
-.header-info-contacts{
+.info__header{
     position: relative; 
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@
     height: 84px;
 }
 
-.main-info-contacts{
+.info__main {
     position: relative; 
     display: flex;
     flex-direction: column;
@@ -59,20 +59,20 @@
     width: 496px;
 }
 
-.main-info-contacts-up{
+.info__main__up{
     position: relative; 
     display: flex;
     justify-content: space-between;
 }
 
-.info-contacts-image{
+.contacts__info__image{
     position: absolute;
     background-color: #232228;
     height: 488px;
     width: 100%;
 }
 
-.block-form-info-contacts{
+.info__footer{
     position: relative; 
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
     height: 87px;
 }
 
-.form-info-contacts{
+.info__form{
     position: relative; 
     display: flex;
     justify-content: space-between;
@@ -89,12 +89,12 @@
     height: 44px;
 }
 
-.input-info-contacts{
+.info__input{
     width: 298px;
     padding: 0;
 }
 
-.button-form-info-contacts{
+.info__button{
     width: 200px;
     background-color: transparent;
     color: white;
@@ -102,101 +102,126 @@
     font-family: 'Roboto', sans-serif;
     border: 1px solid #E3C37A;
     padding: 0;
+    cursor: pointer;
+}
+
+.contacts .line__container{
+    margin-bottom: 5px;
+}
+
+.contacts .title__text{
+    font-size: 40px; 
+    margin: 5px 0; 
+    color: white;
+}
+
+.info__main .title__text{
+    font-size: 16px;  
+    margin: 0; 
+    color: white;
+}
+
+.info__footer{
+    color: white; 
+    font-weight: 200; 
+    font-size: 16px; 
+    line-height: 1.2; 
+    margin: 0;
 }
 
 @media (max-width: 480px) {
-    .section-contacts {
+    .contacts {
         flex-direction: column;
         height: auto;
     }
     
-    .map-contacts {
+    .contacts__map {
         width: 100%;
         height: 300px;
         order: 2;
     }
     
-    .map-image {
+    .map__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     
-    .pointer-image {
+    .pointer__image {
         left: 9%;
         top: 35%;
     }
     
-    .info-contacts {
+    .contacts__info {
         height: auto;
         width: 92.5%;
         padding: 40px 15px;
         order: 1;
     }
     
-    .info-contacts-image {
+    .contacts__info__image {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
     
-    .info-block-contacts {
+    .info {
         width: 100%;
         height: auto;
         gap: 30px;
     }
     
-    .header-info-contacts {
+    .info__header {
         height: auto;
         gap: 15px;
     }
     
-    .header-info-contacts h2 {
+    .info__header h2 {
         font-size: 24px !important;
         line-height: 1.3 !important;
     }
     
-    .main-info-contacts {
+    .info__main {
         width: 100%;
         height: auto;
         gap: 20px;
     }
     
-    .main-info-contacts-up {
+    .info__main__up {
         flex-direction: column;
         gap: 15px;
     }
     
-    .block-form-info-contacts {
+    .info__footer {
         width: 100%;
         height: auto;
         gap: 20px;
     }
     
-    .form-info-contacts {
+    .info__form {
         width: 100%;
         flex-direction: column;
         gap: 15px;
     }
     
-    .input-info-contacts {
+    .info__input {
         width: 91% !important;
         height: 60px;
         padding: 0 15px;
     }
     
-    .button-form-info-contacts {
+    .info__button {
         width: 100% !important;
         height: 44px;
     }
     
-    .header-word-container-teacher,
-    .main-info-contacts p,
-    .block-form-info-contacts p {
+    .line-word,
+    .info__main p,
+    .info__footer p {
         font-size: 12px !important;
     }
     
-    .main-info-contacts span {
+    .info__main span {
         font-size: 14px !important;
     }
 }

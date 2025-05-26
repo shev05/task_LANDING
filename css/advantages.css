@@ -1,4 +1,4 @@
-.section-advantages {
+.advantages {
     position: relative; 
     display: flex;
     min-height: 500px;
@@ -7,7 +7,7 @@
     padding-top: 58px; 
 }
 
-.header-advantages {
+.advantages__header {
     width: 582px;
     height: 120px;
     margin: 0 auto; 
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.cards-advanages {
+.advantages__grid {
     display: flex;
     width: 1296px;
     height: 223px;
@@ -25,27 +25,27 @@
     justify-content: center;
 }
 
-.card-adv{
+.advantages__card{
     border: 1px solid gray;
     width: 250px;
     padding: 20px;
 }
 
-.image-element{
+.advantages__card__icon{
     width: 50px;
     height: 50px;
 }
 
 
-.header-advantages p {
+.advantages__header p {
     margin-bottom: 5px; 
 }
 
-.header-advantages h2 {
+.advantages__header h2 {
     margin-top: 5px; 
 }
 
-.button-advantages{
+.advantages__button{
     display: flex;
     width: 180px;
     height: 44px;
@@ -57,6 +57,7 @@
     font-weight: 300;
     font-size: 16px;
     margin-top: 58px; 
+    cursor: pointer;
 }
 
 .button-advantages:hover{
@@ -65,16 +66,25 @@
     cursor: pointer;
 }
 
+.advantages__card__header{
+    font-weight: 300;
+}
+
+.advantages__card__text{
+    font-size: small;
+    font-weight: 200;
+}
+
 @media (max-width: 480px) {
-    .section-advantages {
+    .advantages {
         padding-top: 30px;
     }
-    .header-advantages {
+    .advantages__header {
         width: 100%;
         height: auto;
         padding: 0 15px;
     }
-    .cards-advanages {
+    .advantages__gird {
         width: 92%;
         padding: 15px;
         height: auto;
@@ -82,11 +92,11 @@
         overflow-x: auto;
         overflow-y: hidden;
     }
-    .card-adv {
+    .advantages__card {
         flex: 0 0 auto; 
     }
 
-    .button-advantages{
+    .advantages__button{
         margin-bottom: 30px;
     }
 }

@@ -1,4 +1,4 @@
-.section-specialists {
+.specialists {
     position: relative; 
     display: flex;
     min-height: 500px;
@@ -9,7 +9,7 @@
     flex-direction: row;
 }
 
-.block-specialists{
+.specialists__header{
     flex-shrink: 0; 
     flex-grow: 0;
     margin-left: 150px;
@@ -20,7 +20,7 @@
     flex-direction: column;
 }
 
-.text-specialist{
+.specialists__header__text{
     max-width: 410px;  
     width: 100%;      
     font-size: medium;
@@ -30,7 +30,7 @@
     margin-top: 5px;
 }
 
-.button-specialists{
+.specialists__header__button{
     display: flex;
     width: 180px;
     height: 44px;
@@ -42,9 +42,10 @@
     font-weight: 300;
     font-size: 16px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
-.specialists-core{
+.specialists__grid{
     display: flex;
     margin-left: 64px;
     width: 1225px;
@@ -53,43 +54,56 @@
     display: flex;
 }
 
-.block-people{
+.specialist__card{
     width: 229px;
     height: 382px;
     padding-right: 20px;
     align-items: center;
-    
 }
 
-.block-photo{
+.specialist__photo{
     width: 229px;
     height: 312px;
     background-color: #A4834E;
     overflow: hidden; 
 }
 
-.block-photo img {
+.specialist__photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block; 
 }
 
+.specialists__header .title__text{
+    margin: 5px 0;
+}
+
+.specialist__card__header{
+    margin: 5px 0; font-weight: 300;
+}
+
+.specialist__card__text{
+    margin: 5px 0;
+    color: gray; 
+    font-size: 13px;
+}
+
 @media (max-width: 480px) {
-    .section-specialists {
+    .specialists {
         flex-direction: column;
         min-height: auto;
         padding: 20px 15px;
     }
     
-    .block-specialists {
+    .specialists__header {
         width: 100%;
         margin-left: 0;
         height: auto;
         margin-bottom: 30px;
     }
     
-    .specialists-core {
+    .specialists__grid {
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -98,31 +112,31 @@
         padding-bottom: 15px;
     }
     
-    .block-people {
+    .specialist__card {
         flex: 0 0 200px;
         height: auto;
         padding-right: 15px;
     }
     
-    .block-photo {
+    .specialist__photo {
         width: 200px;
         height: 250px;
     }
     
-    .button-specialists {
+    .specialists__header__button {
         margin-top: 15px;
     }
     
-    .text-specialist {
+    .specialists__header__text {
         font-size: 14px;
     }
     
-    .header-word-container-teacher,
-    .header-line-container-teacher {
+    .line,
+    .line-word {
         font-size: 14px;
     }
     
-    .section-specialists h2 {
+    .specialists h2 {
         font-size: 24px !important;
         line-height: 1.3 !important;
     }

@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="css/subscribe.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header-container" class="main-header">
-        <div class="header-top text-mini">
-            <p class="main-header-logo">L | R</p>
+    <header id="home" class="header">
+        <div class="header__top">
+            <p class="header__logo">L | R</p>
             <nav>
-                <ul class="text-mini">
+                <ul>
                     <li><a href="#home">Главная</a></li>
                     <li><a href="#services">Услуги</a></li>
                     <li><a href="#convoy">Сопровождение</a></li>
@@ -31,299 +32,326 @@
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-            <p class="main-header-phone">+7 (999) 890 09 98</p>
+            <p class="header__phone">+7 (999) 890 09 98</p>
         </div>
-    <div class="header-line"></div>
-    <div class="stats-container">
-        <div class="stat-item">
-            <span class="stat-value">89%</span>
-            <span class="stat-label">Выигранных дел</span>
+    <div class="header__line"></div>
+    <div class="stats">
+        <div class="stat__item">
+            <span class="stat__value">89%</span>
+            <span class="stat__label">Выигранных дел</span>
         </div>
-        <div class="stat-item">
-            <span class="stat-value">34</span>
-            <span class="stat-label">Сотрудников в штате</span>
+        <div class="stat__item">
+            <span class="stat__value">34</span>
+            <span class="stat__label">Сотрудников в штате</span>
         </div>
-        <div class="stat-item">
-            <span class="stat-value">18</span>
-            <span class="stat-label">Лет на рынке</span>
-        </div>
-    </div>
-    <div class="consultation-container">
-        <p class="consultation-title">НУЖНА КОНСУЛЬТАЦИЯ?</p>
-        <div class="consultation-form">
-            <input type="tel" class="phone-input" placeholder="+7(___) ___ __ __">
-            <button class="callback-button">Заказать звонок</button>
+        <div class="stat__item">
+            <span class="stat__value">18</span>
+            <span class="stat__label">Лет на рынке</span>
         </div>
     </div>
-    <div class="statue-container">
-        <div class="statue-form">
-            <img class="statue-image" src="components/image/statue.png">
+    <div class="consultation">
+        <p class="consultation__title">НУЖНА КОНСУЛЬТАЦИЯ?</p>
+        <form class="consultation__form">
+            <input type="tel" class="consultation__input" placeholder="+7(___) ___ __ __">
+            <button class="consultation__button" onclick="openModal('components/image/Pinguins.jpg')">Заказать звонок</button>
+        </form>
+    </div>
+    <div class="statue">
+        <div class="statue__form">
+            <img class="statue__image" src="components/image/statue.png" alt="Статуя">
         </div>
-        <img class="list1-image" src="components/image/list1.png">
-        <img class="list2-image" src="components/image/list2.png">
-        <img class="list3-image" src="components/image/list3.png">
+        <img class="list1__image" src="components/image/list1.png" alt="Лист">
+        <img class="list2__image" src="components/image/list2.png" alt="Лист">
+        <img class="list3__image" src="components/image/list3.png" alt="Лист">
     </div>
     <div class="head">
         <h1>РЕШИМ ЛЮБОЙ ПРАВОВОЙ ВОПРОС</h1>
         <p>Помощь в решении любого правового вопроса в вашу пользу</p>
     </div>
 </header>
-    
-        <main id="">
-            <section class="section-word-teacher">
-                <div class="content-word-teacher">
-                    <header class="header-word-teacher">
-                        <span class="header-line-container">
-                            <div class="header-line-container-teacher"></div>
-                            <p class="header-word-container-teacher">Слово руководителя</p>
-                        </span>
-                        <h2 style="font-weight: 200; font-size: 35px; line-height: 1.2;">ПОТОМУ ЧТО НАМ<br><span style="color: darkgoldenrod; font-weight: 200;">НЕ ВСЕ РАВНО</span></h2>
-                    </header>
-                    <span class="description-text">Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже, третейском суде, приму участие в переговорах, окажу помощь на стадии досудебного урегулирования споров.</span>
-                    <div class="name-word-teacher">
-                        <span class="name-teacher">ЖЕМЧУЖИН ВАСИЛИЙ ЯКОВЛЕВИЧ</span>
-                        <span class="position-teacher">Генеральный директор</span>
+
+        <main>
+            <section class="director" id="company">
+                <div class="director__content">
+                    <div class="director_header">
+                        <div class="line__container">
+                            <div class="line"></div>
+                            <p class="line__word">Слово руководителя</p>
+                        </div>
+                        <h2 class="title__text">ПОТОМУ ЧТО НАМ<br><span class="golden__text">НЕ ВСЕ РАВНО</span></h2>
+                    </div>
+                    <span class="director__text">Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже, третейском суде, приму участие в переговорах, окажу помощь на стадии досудебного урегулирования споров.</span>
+                    <div class="director__about">
+                        <span class="director__name">ЖЕМЧУЖИН ВАСИЛИЙ ЯКОВЛЕВИЧ</span>
+                        <span class="director__position">Генеральный директор</span>
                     </div>
                     <div >
-                        <img class="signa-image" src="components/image/signa.png"/>
+                        <img class="signa__image" src="components/image/signa.png" alt="Роспись"/>
                     </div>
                     <div>
-                        <p class="qoute-first">&#x275D</p>
+                        <p class="qoute__first">&#x275D</p>
                     </div>
                     <div>
-                        <p class="qoute-second">&#x275E</p>
+                        <p class="qoute__second">&#x275E</p>
                     </div>
                 </div>
-                <div class="image-teacher">
+                <div class="director__image">
                     <div>
-                        <img class="image-people" src="components/image/people.png">
+                        <img class="diretor__face" src="components/image/people.png" alt="Человек">
                     </div>
                     <div >
-                        <img class="image-back" src="components/image/hentik.png">
+                        <img class="director__back" src="components/image/hentik.png" alt="Фон">
                     </div>
                 </div>
             </section>
-            <section class="section-advantages">
-                <header class="header-advantages">
+            <section class="advantages">
+                <div class="advantages__header">
                     <p>Наши преимущества</p>
-                    <h2 style="font-weight: 200; font-size: 35px; line-height: 1.2;">ПОЧЕМУ <span style="color: darkgoldenrod; font-weight: 200;">ВЫБИРАЮТ</span> НАС</h2>
-                </header>
-                <div class="cards-advanages">
-                    <div class="card-adv">
-                        <img class="image-element" src="components/image/clock.png"/>
-                        <p style="font-weight: 300;">КРУГЛОСУТОЧНАЯ ПОДДЕРЖКА</p>
-                        <p style="font-size: small; font-weight: 200;">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
+                    <h2 class="title__text">ПОЧЕМУ <span class="golden__text">ВЫБИРАЮТ</span> НАС</h2>
+                </div>
+                <div class="advantages__grid">
+                    <div class="advantages__card">
+                        <img class="advantages__card__icon" src="components/image/clock.png" alt="Время"/>
+                        <p class="advantages__card__header">КРУГЛОСУТОЧНАЯ ПОДДЕРЖКА</p>
+                        <p class="advantages__card__text">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
                     </div>
-                     <div class="card-adv">
-                        <img class="image-element" src="components/image/backpack.png"/>
-                        <p style="font-weight: 300;">ВЫСОКАЯ ЭСКПЕРТНОСТЬ</p>
-                        <p style="font-size: small; font-weight: 200;">Звонки по любым вопросам<br/>улучшают свои навыки и изучают<br/>новые подходы</p>
+                     <div class="advantages__card">
+                        <img class="advantages__card__icon" src="components/image/backpack.png" alt="Рюкзак"/>
+                        <p class="advantages__card__header">ВЫСОКАЯ ЭСКПЕРТНОСТЬ</p>
+                        <p class="advantages__card__text">Звонки по любым вопросам<br/>улучшают свои навыки и изучают<br/>новые подходы</p>
                     </div>
-                     <div class="card-adv">
-                        <img class="image-element" src="components/image/figure.png"/>
-                        <p style="font-weight: 300;">ДУМАЕМ НА ДВА ШАГА ВПЕРЕД</p>
-                        <p style="font-size: small; font-weight: 200;">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
+                     <div class="advantages__card">
+                        <img class="advantages__card__icon" src="components/image/figure.png" alt="Шахматная фигура"/>
+                        <p class="advantages__card__header">ДУМАЕМ НА ДВА ШАГА ВПЕРЕД</p>
+                        <p class="advantages__card__text">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
                     </div>
-                     <div class="card-adv">
-                        <img class="image-element" src="components/image/book.png"/>
-                        <p style="font-weight: 300; font-size: medium;">ЗНАНИЯ - НАША СИЛА</p>
-                        <p style="font-size: small; font-weight: 200;">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
+                     <div class="advantages__card">
+                        <img class="advantages__card__icon" src="components/image/book.png" alt="Книга"/>
+                        <p class="advantages__card__header">ЗНАНИЯ - НАША СИЛА</p>
+                        <p class="advantages__card__text">Звонки по любым вопросам<br/>в удобное для вас время.<br/>Мы всегда рядом</p>
                     </div>
                 </div>
-                <button class="button-advantages">Заказать звонок</button>
+                <button class="advantages__button"  onclick="openModal('components/image/Pinguins.jpg')"
+>Заказать звонок</button>
             </section>
-            <section class="section-specialists">
-                <div class="block-specialists">
-                    <span class="header-line-container" style="margin-bottom: 5px;">
-                        <div class="header-line-container-teacher"></div>
-                        <p class="header-word-container-teacher">Наша команда</p>
-                    </span>     
-                    <h2 style="font-weight: 200; font-size: 35px; line-height: 1.2; margin: 5px 0;">НАШИ СПЕЦИАЛИСТЫ<br>ЗНАЮТ <span style="color: darkgoldenrod; font-weight: 200;">СВОЕ ДЕЛО</span></h2>
-                    <p class="text-specialist">Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже третейском суде, приму участие в переговорах</p>
-                    <button class="button-specialists">Заказать звонок</button>
+            <section class="specialists"  id="services">
+                <div class="specialists__header">
+                    <div class="line__container" style="margin-bottom: 5px;">
+                        <div class="line"></div>
+                        <p class="line__word">Наша команда</p>
+                    </div>     
+                    <h2 class="title__text">НАШИ СПЕЦИАЛИСТЫ<br>ЗНАЮТ <span class="golden__text">СВОЕ ДЕЛО</span></h2>
+                    <p class="specialists__header__text">Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже третейском суде, приму участие в переговорах</p>
+                    <button class="specialists__header__button"  onclick="openModal('components/image/Pinguins.jpg')"
+>Заказать звонок</button>
                 </div>
-                <div class="specialists-core">
-                    <div class="block-people">
-                        <div class="block-photo">
-                            <img src="components/image/ded.png"/>
+                <div class="specialists__grid">
+                    <div class="specialist__card">
+                        <div class="specialist__photo">
+                            <img src="components/image/ded.png" alt="Работник"/>
                         </div>
-                        <p style="margin: 5px 0; font-weight: 300;">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
-                        <p style="margin: 5px 0; color: gray; font-size: 13px;">27 лет стажа</p>
+                        <p class="specialist__card__header">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
+                        <p class="specialist__card__text">27 лет стажа</p>
                     </div>
-                    <div class="block-people">
-                        <p style="margin: 5px 0; font-weight: 300;">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
-                        <p style="margin: 5px 0; color: gray; font-size: 13px;">27 лет стажа</p>
-                        <div class="block-photo">
-                            <img src="components/image/ded.png"/>
+                    <div class="specialist__card">
+                        <p class="specialist__card__header">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
+                        <p class="specialist__card__text">27 лет стажа</p>
+                        <div class="specialist__photo">
+                            <img src="components/image/ded.png" alt="Работник"/>
                         </div>
                     </div>
-                    <div class="block-people">
-                        <div class="block-photo">
-                            <img src="components/image/ded.png"/>
+                    <div class="specialist__card">
+                        <div class="specialist__photo">
+                            <img src="components/image/ded.png" alt="Работник"/>
                         </div>
-                        <p style="margin: 5px 0; font-weight: 300;">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
-                        <p style="margin: 5px 0; color: gray; font-size: 13px;">27 лет стажа</p>
+                        <p class="specialist__card__header">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
+                        <p class="specialist__card__text">27 лет стажа</p>
                     </div>
-                    <div class="block-people">
-                        <p style="margin: 5px 0; font-weight: 300;">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
-                        <p style="margin: 5px 0; color: gray; font-size: 13px;">27 лет стажа</p>
-                        <div class="block-photo">
-                            <img src="components/image/ded.png"/>
+                    <div class="specialist__card">
+                        <p class="specialist__card__header">КИРИЛЛ АЛЕКСАНДРОВИЧ</p>
+                        <p class="specialist__card__text">27 лет стажа</p>
+                        <div class="specialist__photo">
+                            <img src="components/image/ded.png" alt="Работник"/>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="other-company-select">
-                <img class="back-photo-select" src="components/image/hen.png"/>
-                <p style="z-index: 2; color: gray; font-size: 18px; margin: 70px 0 16px 0;">Нам доверяют</p>
-                <h2 style="font-weight: 200; font-size: 45px; line-height: 1.2; z-index: 2; margin: 16px 0; color: white;">ОНИ <span style="color: #E3C37A; font-weight: 200;">ВЫБРАЛИ</span> НАС</h2>
-                <div class="other-company-block">
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+            <section class="clients" id="convoy">
+                <img class="clients__bg" src="components/image/hen.png" alt="Фон"/>
+                <p class="clients__text">Нам доверяют</p>
+                <h2 class="title_text">ОНИ <span class="golden__text">ВЫБРАЛИ</span> НАС</h2>
+                <div class="clients__grid">
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div>
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div>
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div>
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div>
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div> 
-                    <div class="company-block">
-                        <img class="picture-company"  src="components/image/dmc.png"/>
-                        <p style="color: white;">DMC 3</p>
+                    <div class="client__card">
+                        <img class="client__logo"  src="components/image/dmc.png" alt="Компания"/>
+                        <p class="client__card__text">DMC 3</p>
                     </div>      
                 </div>
             </section>
-            <section class="report-selection">
-                <div class="bl-rep">
-                    <p style="color: gray; margin: 16px 0 2px 0;">О нас говорят</p>
-                    <h2 style="font-weight: 200; font-size: 36px; line-height: 1.2; margin: 8px 0;"><span style="color: #E3C37A; font-weight: 200;">ОТЗЫВЫ</span> НАШИХ КЛИЕНТОВ</h2>
-                    <div class="report-block">
-                        <img class="photo-report" src="components/image/woman.png" />
-                        <div class="report-block-text">
-                            <span class="report-text">Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже, третейском суде, приму участие в переговорах, окажу помощь на стадии досудебного урегулирования споров.</span>
-                            <div>
-                                <p style="font-weight: 300; margin: 20px 0 5px 0;">ЮЛИЯ ВОРОБЬЕВА</p>
-                                <p style="margin: 0;">Директор компании "Воробьева и ко"</p>
+            <section class="reports">
+                <div class="container">
+                    <p class="reports__text">О нас говорят</p>
+                    <h2 class="title_text"><span class="golden__text">ОТЗЫВЫ</span> НАШИХ КЛИЕНТОВ</h2>
+                    <div class="reports-carousel">
+                        <div class="report active" data-index="0">
+                            <img class="report__photo" src="components/image/woman.png" alt="Аватар"/>
+                            <div class="report__info">
+                                <span class="report__text">Я обеспечу представление Ваших интересов</span>
+                                <div>
+                                    <p class="report__name">ЮЛИЯ ВОРОБЬЕВА</p>
+                                    <p class="report__specialist">Директор компании "Воробьева и ко"</p>
+                                </div>
                             </div>
+                            <p class="qoute__first">&#x275D</p>
+                            <p class="qoute__second">&#x275E</p>
                         </div>
-                        <div>
-                            <p class="qoute-first-report">&#x275D</p>
+                        
+                        <div class="report" data-index="1">
+                            <img class="report__photo" src="components/image/man1.webp" alt="Аватар"/>
+                            <div class="report__info">
+                                <span class="report__text">Феноменально!!!</span>
+                                <div>
+                                    <p class="report__name">ЛОСЯШ</p>
+                                    <p class="report__specialist">В душе бабочка</p>
+                                </div>
+                            </div>
+                            <p class="qoute__first">&#x275D</p>
+                            <p class="qoute__second">&#x275E</p>
                         </div>
-                        <div>
-                            <p class="qoute-second-report">&#x275E</p>
-                        </div>
-                    </div>
-                    <div class="border-box-report"></div>
-                    <button class="arrow-right">&rarr;</button>
-                    <button class="arrow-left">&larr;</button>
-                    <div class="pagination" style="text-align: center;">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-            </section>
-            <section class="article-section">
-                <header class="article-header">
-                    <div class="text-article-header">
-                        <span class="header-line-container" style="margin-bottom: 0;">
-                            <div class="header-line-container-teacher"></div>
-                            <p class="header-word-container-teacher" style="margin: 0;">Наша команда</p>
-                        </span>     
-                        <h2 style="font-weight: 200; font-size: 40px; line-height: 1.2; z-index: 2; margin: 0; color: black;"><span style="color: #A4834E; font-weight: 200;">ПОЛЕЗНО</span> ЗНАТЬ</h2>
-                    </div>
-                    <button class="button-header-article">ЧИТАТЬ БОЛЬШЕ</button>
-                </header>
-                <div class="article-blocks">
-                    <div class="article-block">
-                        <img class="article-image"  src="components/image/womanSt.png"/>
-                        <div class="article-text">
-                            <p style="color: #B1B1B1;">15 апреля</p>
-                            <span style="color: white;">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
-                            <button class="button-article">ЧИТАТЬ</button>
+                        
+                        <div class="report" data-index="2">
+                            <img class="report__photo" src="components/image/man2.jpg" alt="Аватар"/>
+                            <div class="report__info">
+                                <span class="report__text">Хороший лайн получился</span>
+                                <div>
+                                    <p class="report__name">СЕРЕГА ПИРАТ</p>
+                                    <p class="report__specialist">Молодой талант</p>
+                                </div>
+                            </div>
+                            <p class="qoute__first">&#x275D</p>
+                            <p class="qoute__second">&#x275E</p>
                         </div>
                     </div>
-                    <div class="article-block">
-                        <img class="article-image" style="height: 239px;" src="components/image/articleMan.png"/>
-                        <div class="article-text">
-                            <p style="color: #B1B1B1;">15 апреля</p>
-                            <span style="color: black;">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
-                            <button class="button-article" style="color: black">ЧИТАТЬ</button>
-                        </div>
-                    </div>
-                    <div class="article-block">
-                        <img class="article-image" style="height: 239px;" src="components/image/articlePen.png"/>
-                        <div class="article-text">
-                            <p style="color: #B1B1B1;">15 апреля</p>
-                            <span style="color: black;">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
-                            <button class="button-article" style="color: black">ЧИТАТЬ</button>
-                        </div>
-                    </div>
-                    <div class="article-block">
-                        <img class="article-image" style="height: 239px;" src="components/image/articleSud.png"/>
-                        <div class="article-text">
-                            <p style="color: #B1B1B1;">15 апреля</p>
-                            <span style="color: black;">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
-                            <button class="button-article" style="color: black">ЧИТАТЬ</button>
-                        </div>
+                    <div class="border__box"></div>
+                    <button class="arrow__left" onclick="prevReview()">&larr;</button>
+                    <button class="arrow__right" onclick="nextReview()">&rarr;</button>
+                    
+                    <div class="pagination">
+                        <span class="dot active" onclick="goToReview(0)"></span>
+                        <span class="dot" onclick="goToReview(1)"></span>
+                        <span class="dot" onclick="goToReview(2)"></span>
                     </div>
                 </div>
             </section>
-            <section class="section-subscribe">
-                <div class="block-subscribe">
-                    <div class="text-subscribe">
-                        <div class="header-subscribe">
-                            <p class="color: #B1B1B1; font-size: 10px;">Будьте в курсе</p>
-                            <h2 style="font-weight: 200; font-size: 43.5px; line-height: 1.2; z-index: 2; margin: 0; color: black;"><span style="color: #A4834E; font-weight: 200;">ПОДПИШИТЕСЬ</span> НА НАШИ НОВОСТИ</h2>
-                        </div>
-                        <div style="display: flex; align-items: flex-end; height: 100px; justify-content: center;">
-                            <p style="margin: 0; font-size: 14px; font-weight: 300;">Чтобы всегда оставаться в курсе дел и обновлении законов</p>
+            <section class="article" id="useful">
+                <div class="article__header">
+                    <div class="article__header__text">
+                        <div class="line__container">
+                            <div class="line"></div>
+                            <p class="line__word">Наша команда</p>
+                        </div>     
+                        <h2 class="title__text"><span class="golden__text">ПОЛЕЗНО</span> ЗНАТЬ</h2>
+                    </div>
+                    <button class="article__header__button" onclick="openModal('components/image/readAll.png')">ЧИТАТЬ БОЛЬШЕ</button>
+                </div>
+                <div class="article__grid">
+                    <div class="article__card">
+                        <img class="article__image"  src="components/image/womanSt.png" alt="Фото статьи"/>
+                        <div class="article__text">
+                            <p class="article__card__date">15 апреля</p>
+                            <span class="article__card__title">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
+                            <button class="article__button" onclick="openModal('components/image/read.jpg')">ЧИТАТЬ</button>
                         </div>
                     </div>
-                    <form class="form-subscribe">
-                        <input class="input-subscribe" placeholder="Ваш e-mail"/>
-                        <button class="button-subscribe">Подписатся</button>
+                    <div class="article__card">
+                        <img class="article__image" style="height: 239px;" src="components/image/articleMan.png" alt="Фото статьи"/>
+                        <div class="article__text">
+                            <p class="article__card__date">15 апреля</p>
+                            <span class="article__card__title__black">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
+                            <button class="article__button"  style="color: black" onclick="openModal('components/image/read.jpg')" >ЧИТАТЬ</button>
+                        </div>
+                    </div>
+                    <div class="article__card">
+                        <img class="article__image" style="height: 239px;" src="components/image/articlePen.png" alt="Фото статьи"/>
+                        <div class="article__text">
+                            <p class="article__card__date">15 апреля</p>
+                            <span class="article__card__title__black">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
+                            <button class="article__button" style="color: black" onclick="openModal('components/image/read.jpg')">ЧИТАТЬ</button>
+                        </div>
+                    </div>
+                    <div class="article__card">
+                        <img class="article__image" style="height: 239px;" src="components/image/articleSud.png" alt="Фото статьи"/>
+                        <div class="article__text">
+                            <p class="article__card__date">15 апреля</p>
+                            <span class="article__card__title__black">КАК ИСПОЛЬЗОВАТЬ ЗАКОН С СВОЮ ПОЛЬЗУ?</span>
+                            <button class="article__button" style="color: black" onclick="openModal('components/image/read.jpg')">ЧИТАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__text">
+                        <div class="subscribe__header">
+                            <p>Будьте в курсе</p>
+                            <h2 class="title__text"><span class="golden__text">ПОДПИШИТЕСЬ</span> НА НАШИ НОВОСТИ</h2>
+                        </div>
+                        <div class="subscribe__subtext">
+                            <p>Чтобы всегда оставаться в курсе дел и обновлении законов</p>
+                        </div>
+                    </div>
+                    <form class="subscribe__form">
+                        <input class="subscribe__input" placeholder="Ваш e-mail"/>
+                        <button class="subscribe__button" onclick="openModal('components/image/subscribe.jpg')">Подписатся</button>
                     </form>
                 </div>
             </section>
-            <section class="section-contacts">
-                <div class="map-contacts">
-                    <img class="map-image" src="components/image/map.png"/>
-                    <img class="pointer-image" src="components/image/pointer.png">
+            <section class="contacts" id="contact">
+                <div class="contacts__map">
+                    <img class="map__image" src="components/image/map.png" alt="Карта"/>
+                    <img class="pointer__image" src="components/image/pointer.png" alt="Точка">
                 </div>
-                <div class="info-contacts">
-                    <img class="info-contacts-image" src="components/image/infoImg.png"/>
-                    <div class="info-block-contacts">
-                        <div class="header-info-contacts">
-                            <span class="header-line-container" style="margin-bottom: 5px;">
-                                <div class="header-line-container-teacher"></div>
-                                <p class="header-word-container-teacher">На связи с нами</p>
-                            </span>     
-                            <h2 style="font-weight: 200; font-size: 40px; line-height: 1.2; margin: 5px 0; color: white;"><span style="color: #E3C37A; font-weight: 200;">КОНТАКТНАЯ</span> ИНФОРМАЦИЯ</h2>        
+                <div class="contacts__info">
+                    <img class="contacts__info__image" src="components/image/infoImg.png" alt="Фон"/>
+                    <div class="info">
+                        <div class="info__header">
+                            <div class="line__container">
+                                <div class="line"></div>
+                                <p class="line__word">На связи с нами</p>
+                            </div>     
+                            <h2 class="title__text"><span class="golden__text">КОНТАКТНАЯ</span> ИНФОРМАЦИЯ</h2>        
                         </div>
-                        <div class="main-info-contacts">
-                            <div class="main-info-contacts-up">
-                                <p style="font-weight: 200; font-size: 16px; line-height: 1.2; margin: 0; color: white;">ТЕЛЕФОН    <span style="color: #E3C37A; font-weight: 200;">+7 (999) 890 09 98</span></p> 
-                                <p style="font-weight: 200; font-size: 16px; line-height: 1.2; margin: 0; color: white;">ПОЧТА    <span style="color: #E3C37A; font-weight: 200;">INFO@YA.RU</span></p>               
+                        <div class="info__main">
+                            <div class="info__main__up">
+                                <p class="title__text">ТЕЛЕФОН    <span class="golden__text">+7 (999) 890 09 98</span></p> 
+                                <p class="title__text">ПОЧТА    <span class="golden__text">INFO@YA.RU</span></p>               
                             </div>
-                            <p style="font-weight: 200; font-size: 16px; line-height: 1.2; margin: 0; color: white;">АДРЕС    <span style="color: #E3C37A; font-weight: 200;">МОСКВА, УЛ. АРБАТ, Д.1</span></p>               
+                            <p class="title__text">АДРЕС    <span class="golden__text">МОСКВА, УЛ. АРБАТ, Д.1</span></p>               
                         </div>
-                        <div class="block-form-info-contacts">
-                            <p style="color: white; font-weight: 200; font-size: 16px; line-height: 1.2; margin: 0;">НУЖНА КОНСУЛЬТАЦИЯ?</p>
-                            <form class="form-info-contacts">
-                                <input placeholder="+7 (__) ___ __ __" class="input-info-contacts"/>
-                                <button class="button-form-info-contacts">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <div class="info__footer">
+                            <p>НУЖНА КОНСУЛЬТАЦИЯ?</p>
+                            <form class="info__form">
+                                <input placeholder="+7 (__) ___ __ __" class="info__input"/>
+                                <button class="info__button"  onclick="openModal('components/image/Pinguins.jpg')">ЗАКАЗАТЬ ЗВОНОК</button>
                             </form>
                         </div>
                     </div>
@@ -333,9 +361,18 @@
         <footer>
             <div class="footer-block">
                 <p>© Все права защищены 2023</p>
-            </div>
+            </div>  
         </footer>
+
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="Пример модального окна" class="modal__image">
+            </div>
+        </div>
     
     <script src="javaScript/clickNav.js"></script>
+    <script src="javaScript/modal.js"></script>
+    <script src="javaScript/report.js"></script>
 </body>
 </html>

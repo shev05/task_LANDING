@@ -1,4 +1,4 @@
-.article-section{
+.article{
     position: relative; 
     display: flex;
     height: 727px;
@@ -6,7 +6,7 @@
     align-items: center; 
 }
 
-.article-header{
+.article__header{
     margin: 80px 0 28px 0;
     position: relative; 
     display: flex;
@@ -15,15 +15,16 @@
     justify-content: space-between;
 }
 
-.button-header-article{
+.article__header__button{
     height: 40.5px;
     border: 1px solid #E3C37A;
     background-color: white;
     padding: 0 20px;
     text-align: center;
+    cursor: pointer;
 }
 
-.text-article-header{
+.article__header__text{
     display: flex;
     position: relative; 
     flex-direction: column;
@@ -31,7 +32,7 @@
     height: 100%;
 }
 
-.article-blocks{
+.article__grid{
     display: flex;
     position: relative; 
     margin-top: 28px;
@@ -39,7 +40,7 @@
     height: 430px;
 }
 
-.article-block{
+.article__card{
     display: flex;
     position: relative; 
     flex-direction: column;
@@ -48,13 +49,13 @@
     margin-right: 24px;
 }
 
-.article-image{
+.article__image{
     position: absolute;
     width: 306px;
     height: 430px;
 }
 
-.article-text{
+.article__text{
     display: flex;
     position: relative; 
     flex-direction: column;
@@ -63,7 +64,7 @@
     margin: 240px 0 0 32px;
 }
 
-.button-article{
+.article__button{
     margin-top: 5px;
     border: 1px solid #E3C37A;
     width: 110px;
@@ -73,16 +74,48 @@
     color: white;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.article .line__container{
+    margin-bottom: 0;
+}
+
+.article .line__word{
+    margin: 0;
+}
+
+.article .title__text{
+    font-size: 40px; 
+    z-index: 2; 
+    margin: 0; 
+    color: black;
+}
+
+.article .golden__text{
+    color: #A4834E
+}
+
+.article__card__date{
+    color: #B1B1B1;
+}
+
+.article__card__title{
+    color: white;
+}
+
+.article__card__title__black{
+    color: black;
 }
 
 @media (max-width: 480px) {
-    .article-section {
+    .article {
         height: auto;
         padding: 40px 15px;
         overflow-x: hidden;
     }
     
-    .article-header {
+    .article__header {
         width: 100%;
         height: auto;
         flex-direction: column;
@@ -90,29 +123,29 @@
         align-items: center;
     }
     
-    .text-article-header {
+    .article__header__text {
         width: 100%;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
     }
     
-    .header-word-container-teacher {
+    .line__word {
         font-size: 14px !important;
     }
     
-    .article-header h2 {
+    .article__header h2 {
         font-size: 28px !important;
         text-align: center;
         margin: 10px 0 !important;
     }
     
-    .button-header-article {
+    .article__header__button {
         margin-top: 15px;
         width: 160px;
     }
     
-    .article-blocks {
+    .article__grid {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -123,7 +156,7 @@
         gap: 10px;
     }
     
-    .article-block {
+    .article__card {
         flex: 0 0 auto; 
         width: 80% !important;
         height: auto;

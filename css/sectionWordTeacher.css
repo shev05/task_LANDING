@@ -1,4 +1,4 @@
-.section-word-teacher {
+.director {
     position: relative; 
     display: flex;
     height: 500px; 
@@ -10,30 +10,30 @@ h2 {
   font-weight: 100;
 }
 
-.header-line-container-teacher {
+.line {
     width: 5vh;
     height: 1px;
     background-color: #B1B1B1; 
     margin: 5px 0;
 }
 
-.header-word-teacher h2 {
+.director_header h2 {
     margin-top: 0; 
     margin-bottom: 0;
 }
 
-.header-line-container {
+.line__container {
     display: flex;
     align-items: center;
     gap: 10px; 
     font-size: 12px;
 }
 
-.header-word-container-teacher {
+.line__word {
     color: #B1B1B1;
 }
 
-.content-word-teacher {
+.director__content {
     position: relative;
     display: flex;
     left: 50%;
@@ -44,7 +44,7 @@ h2 {
     box-sizing: border-box; 
 }
 
-.description-text {
+.director__text {
     width: 440px;
     margin-top: 10px; 
     font-size: 14px; 
@@ -52,7 +52,7 @@ h2 {
     font-weight: 300;
 }
 
-.name-word-teacher{
+.director__about{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -61,13 +61,13 @@ h2 {
     gap: 10px; 
 }
 
-.name-teacher{
+.director_name{
     font-size: 14px;  
     line-height: 1.5;
     font-weight: 300;
 }
 
-.signa-image{
+.signa__image{
     display: flex;
     position: absolute;
     right: 30px;
@@ -78,7 +78,7 @@ h2 {
     z-index: 1;
 }
 
-.qoute-first{
+.qoute__first{
     display: flex;
     position: absolute;
     color: #B1B1B1;
@@ -89,7 +89,7 @@ h2 {
     margin: 0
 }
 
-.qoute-second{
+.qoute__second{
     display: flex;
     position: absolute;
     color: #B1B1B1;
@@ -100,7 +100,7 @@ h2 {
     margin: 0
 }
 
-.image-teacher{
+.director__image{
     position: absolute;
     left: 0;
     top: 0;
@@ -108,7 +108,7 @@ h2 {
     height: 100%;
 }
 
-.image-back{
+.director__back{
     position: absolute;
     height: 100%;
     width:376px;
@@ -116,7 +116,7 @@ h2 {
     z-index: 2;
 }
 
-.image-people{
+.diretor__face{
     position: absolute;
     left: 150px;
     top: 40px;
@@ -126,23 +126,22 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    .section-word-teacher{
+    .director{
         height: 300px;
-
     }
 
-    .image-back{
+    .director__back{
         display: none;
     }
 
-    .qoute-first, .qoute-second{
+    .qoute__first, .qoute__second{
         display: none;
     }
-    .image-teacher{
+    .director__image{
         z-index: 1;
     }
 
-    .content-word-teacher{
+    .director__content{
         left: 0;
         top: 0; 
         z-index: 2;
@@ -151,17 +150,19 @@ h2 {
         padding: 5px;
         width: 100%;
     }
-    .image-people{
+
+    .diretor__face{
         display: none;
     }
-    .signa-image{
+
+    .signa__image{
         width: 30%;
         height: 30%;
         right: 2%;
         bottom: 2%;
     }
 
-    .name-word-teacher{
+    .director__about{
         padding: 5px;
     }
 }
